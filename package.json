@@ -13,6 +13,7 @@
         "typescript": "^4.3.5"
     },
     "scripts": {
-        "test": "yarn anchor build && rm -rf tests/client-gen && yarn anchor-client-gen target/idl/test_program.json tests/client-gen --program-id Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS && yarn anchor test --skip-build"
+        "test": "yarn anchor build && rm -rf tests/client-gen && yarn anchor-client-gen target/idl/test_program.json tests/client-gen --program-id Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS && yarn anchor test --skip-build",
+        "test-bpf": "cargo test-bpf"
     }
 }
